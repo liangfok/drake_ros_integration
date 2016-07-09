@@ -6,7 +6,7 @@ if(CMAKE_COMPILER_IS_GNUCXX)
 endif()
 
 ## Finds the required macros and libraries.
-find_package(catkin REQUIRED COMPONENTS roscpp tf sensor_msgs drake_ros)
+find_package(catkin REQUIRED COMPONENTS roscpp tf sensor_msgs drake_ros_systems)
 
 
 # Assuming drake is being built in the same workspace, which builds eigen into
