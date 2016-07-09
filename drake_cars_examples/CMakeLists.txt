@@ -19,7 +19,13 @@ set(EIGEN3_FOUND true)
 
 catkin_package()
 
-include_directories(include ${catkin_INCLUDE_DIRS} ${EIGEN3_INCLUDE_DIR} ${CMAKE_INSTALL_PREFIX}/include)
+include_directories(
+  include
+  ${catkin_INCLUDE_DIRS}
+  ${EIGEN3_INCLUDE_DIR}
+  ${CMAKE_INSTALL_PREFIX}/include
+  ${CMAKE_INSTALL_PREFIX}/include/lcmtypes
+  )
 
 add_executable(golfcart_adapter src/golfcart_adapter.cc)
 target_link_libraries(golfcart_adapter ${catkin_LIBRARIES})
